@@ -35,7 +35,7 @@
         methods: {
             deletePost(id) {
                 // TODO: Complete the delete method
-                axios.get(`{this.baseUrl}/deletePost`, {params: {id: id}}).then(response=> {
+                axios.get(`${this.baseUrl}/deletePost`, {params: {id: id}}).then(response=> {
                     this.posts = this.posts.filter(post=>post.id!=id)
                 }).catch(error=>{
                     console.log(error)
